@@ -33,7 +33,6 @@
 
     <div class="">
         {{ $slot }}
-
     </div>
 
     @include('layouts.principal-footer')

@@ -8,7 +8,23 @@
     {{-- Filtros --}}
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="flex flex-col">
+            <div class="flex justify-between items-center mb-2">
+                <label class="block text-sm font-bold text-gray-700">Categorías</label>
+                @if (count($selectedCategories) > 0)
+                    <button wire:click="clearCategoryFilters"
+                        class="text-[10px] text-red-500 hover:underline font-bold uppercase">
+                        Limpiar ({{ count($selectedCategories) }})
+                    </button>
+                @endif
+            </div>
+        </div>
+    </div>
 
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+        
         {{-- Selector de Categorías --}}
         <div class="flex flex-col">
             <div class="flex justify-between items-center mb-2">
@@ -49,8 +65,7 @@
                 @endif
             </div>
 
-            <div
-                class="w-full border border-gray-300 rounded-lg shadow-sm bg-white p-3 h-32 overflow-y-auto custom-scrollbar">
+            <div class="w-full border border-gray-300 rounded-lg shadow-sm bg-white p-3 h-32 overflow-y-auto custom-scrollbar">
                 @foreach ($brands as $brand)
                     <div class="flex items-center mb-1 last:mb-0">
                         <input type="checkbox" id="brand-{{ $brand->id }}" value="{{ $brand->id }}"
@@ -64,6 +79,7 @@
                 @endforeach
             </div>
         </div>
+
         {{-- Nombre del producto --}}
         <div class="relative">
             <label class="block text-sm font-bold text-gray-700 mb-2">Nombre del Producto</label>
@@ -94,14 +110,14 @@
 
         {{-- Paginación de ser Necesario --}}
         @if ($products->count())
-            <div class="mt-8">
+            <div class="flex justify-between">
                 {{ $products->links() }}
             </div>
         @endif
     </div>
 
     {{-- Contenido Principal: Tarjeta con Productos --}}
-    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
 
         @forelse ($products as $product)
             <!--- Card de Producto --->
