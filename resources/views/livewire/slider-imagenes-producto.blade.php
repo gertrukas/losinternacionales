@@ -1,6 +1,5 @@
 <div>
-    <section class="w-[90%] mx-auto max-w-screen-lg overflow-hidden text-white rounded-lg mt-20 slider relative"
-        id="slider">
+    <section class="mx-auto max-w-screen-lg overflow-hidden rounded-lg slider relative object-top" id="slider">
 
         @php
             // 1. Filtramos las imágenes que realmente existen físicamente en el storage
