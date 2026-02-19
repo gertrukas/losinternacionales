@@ -10,11 +10,8 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div class="flex flex-col">
-            <div class="flex justify-between items-center mb-2">
-                <label for="cat-select" class="block text-sm font-bold text-gray-700">Categorías</label>
-            </div>
-            <select id="cat-select" wire:model.live="selectedCategories"
-                class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 bg-white">
+            
+            <select id="cat-select" wire:model.live="selectedCategories" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 bg-white">
                 <option value="">Seleccione Categoría</option>
                 @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -24,11 +21,8 @@
 
         {{-- Selector de Marcas --}}
         <div class="flex flex-col">
-            <div class="flex justify-between items-center mb-2">
-                <label for="brand-select" class="block text-sm font-bold text-gray-700">Marcas</label>
-            </div>
             <select id="brand-select" wire:model.live="selectedBrands" |
-                class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-green-500 h-32">
+                class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-green-500 -err">
                 <option value="">Seleccione Marca</option>
                 @foreach ($brands as $brand)
                     <option value="{{ $brand->id }}">{{ $brand->name }}</option>
@@ -38,8 +32,6 @@
 
         {{-- Nombre del producto --}}
         <div class="mb-4">
-            <label class="block text-sm font-bold text-gray-700 mb-2">Nombre del Producto</label>
-
             <div class="relative flex items-center">
                 <input wire:model.live="searchQuery" type="text" placeholder="Buscar por nombre..."
                     class="w-full border-gray-300 rounded-lg pr-10 focus:ring-blue-500">
@@ -81,10 +73,10 @@
                     @endif
                 </div>
                 <div class="p-4 flex-col h-full">
-                    <h3 class="font-bold text-2xl mb-2">{{ $product->name }}</h3>
+                    <h3 class="font-bold text-2xl mb-2">{{ Str::limit($product->name, 18) }}</h3>
 
                     <p class="text-sm font-semibold text-blue-600 mb-1">
-                        Marca: {{ $product->brand->name ?? 'Sin marca' }}
+                        Marca: {{ $product->brand->name ?? '' }}
                     </p>
 
                     <div class="flex flex-wrap gap-1 mb-2">

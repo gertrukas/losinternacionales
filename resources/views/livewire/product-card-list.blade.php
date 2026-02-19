@@ -1,11 +1,10 @@
 <div class="container mx-auto p-4 bg-gray-100">
 
     <header class="flex justify-between items-center mb-0">
-        <div class="text-6xl font-bold text-center pb-2">
-            <h1 class="">{{ $title }}</h1>
-        </div>
+            <h1 class="-titulo-area">{{ $title }}</h1>
     </header>
 
+    
 
 
     {{-- Contenedor del Grid de Tarjetas --}}
@@ -40,11 +39,11 @@
                 </div>
 
                 <div class="p-4 flex-col h-full">
-                    <h3 class="font-bold text-2xl mb-2">{{ $item->name }}</h3>
+                    <p class="-titulo-card">{{ Str::limit($item->name, 18) }}</p>
 
                     <div class="max-h-[96px] overflow-hidden line-clamp-3">
                         <div class="text-sm text-gray-600">
-                            {!! $item->description !!}
+                            {!! $item->short_description !!}
                         </div>
                     </div>
                 </div>

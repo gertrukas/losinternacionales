@@ -35,6 +35,14 @@
         @apply text-base60
     }
 
+    .-titulo-area{
+        @apply  font-bold text-center pb-2 lg:text-5xl md:text-3xl sm:text-2xl sm:text-black text-2xl
+    }
+
+    .-titulo-card{
+        @apply   font-bold  pb-2 lg:text-3xl md:text-xl sm:text-lg sm:text-black text-lg
+    }
+
     .-breadcrumb{
         @apply  border-t border-b border-base10 pl-4
     }
@@ -43,6 +51,10 @@
         font-size:12px;
         color: white;
     }
+    
+
+
+
 
     .-lista{
         margin-left:4rem;
@@ -142,9 +154,7 @@
 .-ver-mas{
     @apply text-2xl bg-base30 hover:bg-base10 text-white pb-1 px-4 m-4 rounded ;
 }
-.-titulo{
-    @apply text-orange-500;
-}
+
 
 .-tarjeta-pdcto{
     @apply bg-white rounded-xl shadow-xl overflow-hidden h-full flex flex-col transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl;

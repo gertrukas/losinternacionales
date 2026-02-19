@@ -10,12 +10,7 @@
 
     @include('layouts.principal-header')
 
-    @include('components.home-hero-section')
-
-
-
     {{ $slot }}
-
 
     @include('layouts.principal-footer')
 
