@@ -1,13 +1,8 @@
-<div class="container mx-auto p-4">
-    {{ Breadcrumbs::render('blog.show', $blog) }}
-    <div class="flex justify-end mt-4 pb-8">
-        <a href="/"
-            class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded
-               transition-colors duration-300 shadow-lg">
-            &larr; REGRESAR
-        </a>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div class="w-full">
+
+    {{ Breadcrumbs::render('blog.show', $blog->title) }}   
+   
+    <div class="container mx-auto p-4">
         <!-- COLUMNA IZQUIERDA: Imagen + autor/fecha -->
         <div class="flex flex-col gap-6">
             <!-- Imagen -->
@@ -15,12 +10,13 @@
 
             <!-- Autor y fecha en un solo renglón -->
             <div class="flex justify-between items-center text-sm text-gray-600">
+                
+                <div>
+                    {{ $blog->published_at->format('j F Y') }}
+                    <!-- o: {{ $blog->published_at->translatedFormat('j \de F \de Y') }} -->
+                </div>
                 <div class="font-medium text-gray-900">
                     {{ $blog->author->name }}
-                </div>
-                <div>
-                    {{ $blog->published_at->format('d/m/Y') }}
-                    <!-- o: {{ $blog->published_at->translatedFormat('j \de F \de Y') }} -->
                 </div>
             </div>
         </div>
@@ -41,5 +37,14 @@
                 {!! $blog->content !!}
             </div>
         </div>
+
+         <div class="flex justify-end mt-4 pb-8">
+            <a href="/"
+                class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded
+                transition-colors duration-300 shadow-lg">
+                &larr; REGRESAR
+            </a>
+        </div>
+    
     </div>
 </div>

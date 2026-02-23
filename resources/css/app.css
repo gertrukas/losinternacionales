@@ -28,7 +28,7 @@
     }
 
     .-titulo{
-        @apply bg-base10 text-base60 text-right p-4 font-montserrat text-xl mt-2
+        @apply bg-base10 text-base60 text-right p-4 font-montserrat text-xl mt-0
     }
 
     .-titulo p{
@@ -86,7 +86,6 @@
         color: #AA8E1E;
         background-color: #4F420E;
         font-size: 12px;
-
     }
     
     .-razas{
@@ -97,8 +96,6 @@
         @apply  lg:w-4/5  md:w-3/4  sm:w-full
     }
 
-
-    
 
     .slider{
         @apply grid;
@@ -157,7 +154,11 @@
 
 
 .-tarjeta-pdcto{
-    @apply bg-white rounded-xl shadow-xl overflow-hidden h-full flex flex-col transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl;
+    @apply bg-white rounded-2xl shadow-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl;
+}
+
+.-breadcrumb-link{
+   @apply  text-white hover:text-base30;
 }
 
 

@@ -9,10 +9,17 @@
                                     @endphp
 
                                     @if ($imageExists)
-                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}"
-                                            class="w-full h-full object-cover">
+                                        <a href="{{ route('blog.show', ['slug' => $blog->slug]) }}" class="">
+                                            <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}"
+                                                class="w-full h-full object-cover">
+                                        </a>
+
                                     @else
-                                        <img src="{{ asset('images/generico.jpeg') }}" alt="Imagen genérica"
+                                        <a href="{{ route('blog.show', ['slug' => $blog->slug]) }}" class="">
+                                                <img src="{{ asset('images/generico.jpeg') }}" alt="Imagen genérica"
                                             class="w-full h-full object-cover">
+                                        </a>
+
+
                                     @endif
                                 </div>

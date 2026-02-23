@@ -37,7 +37,8 @@ Route::get('/quienes-somos', function () {
     $_descripcion = 'En Protektium ofrecemos soluciones en calzado industrial y accesorios de seguridad, respaldadas por asesoría técnica y enfoque ergonómico.';
 
     return view('somos', compact('title', 'canonical', '_descripcion'));
-});
+
+})->name('somos');
 
 
 Route::get('/contacto', ContactForm::class)->name('contacto');

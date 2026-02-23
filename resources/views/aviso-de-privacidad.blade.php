@@ -3,8 +3,9 @@
 
 
 @section('content')
-    <div class="-titulo"><p>Aviso de privacidad</p></div>
+    {{  Breadcrumbs::render('aviso-de-privacidad') }}
 
+    
 
     <div class="m-6 p-6">
       <p>Aviso dirigido a los titulares de datos personales que obran en posesión de Protektium, hace de su conocimiento que los datos personales de usted, incluyendo los sensibles, que actualmente o en el futuro obren en nuestras bases de datos, serán tratados y/o utilizados por: Protektium y/o las empresas controladoras de ésta última y/o nuestras empresas filiales y/o subsidiarias y/o aquellos terceros que, por la naturaleza de sus trabajos o funciones tengan la necesidad de tratar y/o utilizar sus datos personales; con el propósito de cumplir aquellas obligaciones que se derivan de la relación jurídica existente entre usted como titular de los datos personales y las empresas antes señaladas.</p>

@@ -10,8 +10,6 @@
 
     @include('layouts.principal-header')
 
-    @include('layouts.breadcrumb-productos')
-
     <div class="">
         {{ $slot }}
     </div>

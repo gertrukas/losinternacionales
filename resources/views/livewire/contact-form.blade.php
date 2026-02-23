@@ -1,5 +1,10 @@
 
+  
+    
     <div>
+        
+        {{  Breadcrumbs::render('contacto') }}
+
         <div class="wrapper py-12 lg:py-20">
             <div class="max-w-3xl mx-auto">
                 @if (session()->has('error'))

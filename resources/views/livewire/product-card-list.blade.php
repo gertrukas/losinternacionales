@@ -1,5 +1,7 @@
 <div class="container mx-auto p-4 bg-gray-100">
 
+
+
     <header class="flex justify-between items-center mb-0">
         <h1 class="-titulo-area">{{ $title }}</h1>
     </header>
@@ -8,12 +10,12 @@
 
 
     {{-- Contenedor del Grid de Tarjetas --}}
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-[auto_1fr_auto] gap-6 w-full">
 
         @forelse ($items as $item)
             <!--- Card de Producto --->
 
-            <div class="-tarjeta-pdcto">
+            <div class="grid grid-rows-subgrid row-span-3 bg-white p-2 gap-1 -tarjeta-pdcto">
 
                 <div class="h-48 p-2">
                     @php

@@ -13,11 +13,46 @@ Breadcrumbs::for('home', function (BreadcrumbTrail $trail) {
     $trail->push('Inicio', route('home'));
 });
 
-// Home > Blog
-Breadcrumbs::for('blog', function (BreadcrumbTrail $trail) {
-    $trail->parent('home');
-    $trail->push('Blog', route('blog'));
+// Somos
+Breadcrumbs::for('somos', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Quienes somos', route('somos'));
 });
+
+Breadcrumbs::for('productos', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Productos', route('products.index'));
+});
+
+Breadcrumbs::for('producto', function (BreadcrumbTrail $trail, $name) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Productos', route('products'));
+    $trail->push($name, route('products')); 
+});
+
+Breadcrumbs::for('contacto', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Contacto', route('contacto'));
+});
+
+
+Breadcrumbs::for('aviso-de-privacidad', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Aviso de privacidad', route('aviso-de-privacidad'));
+});
+
+Breadcrumbs::for('blogs', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Blogs', route('blogs.index'));
+});
+
+Breadcrumbs::for('blog.show', function (BreadcrumbTrail $trail, $title) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Blogs', route('blogs.index'));
+    $trail->push($title, route('blog.show', $title));   
+});
+
+
 
 // Home > Blog > [Category]
 Breadcrumbs::for('category', function (BreadcrumbTrail $trail, $category) {
@@ -25,14 +60,4 @@ Breadcrumbs::for('category', function (BreadcrumbTrail $trail, $category) {
     $trail->push($category->title, route('category', $category));
 });
 
-// Productos
-Breadcrumbs::for('products.index', function (BreadcrumbTrail $trail) {
-    $trail->parent('home');
-    $trail->push('Productos', route('products'));  // apunta a /productos
-});
 
-// Inicio > Productos > [Nombre del producto]
-Breadcrumbs::for('producto', function (BreadcrumbTrail $trail, $product) {
-    $trail->parent('products.index');
-    $trail->push($product->name, route('product.show', $product->slug));
-});

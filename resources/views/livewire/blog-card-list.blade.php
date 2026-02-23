@@ -1,22 +1,21 @@
-<div class="container mx-auto p-4">
+<div class="container mx-auto p-4 bg-gray-100 mt-4">
 
     <header class="flex justify-between items-center mb-0">
         <div class="text-6xl font-bold text-center pb-2">
-            <h1 class="">{{ $title }}</h1>
+            <h1 class="-titulo-area">{{ $title }}</h1>
         </div>
     </header>
 
-    <hr class="mb-8">
 
     {{-- Contenedor del Grid de Tarjetas --}}
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-[auto_1fr_auto] gap-6 w-full">
 
         @forelse ($items as $item)
             <a href="{{ route('blog.show', ['slug' => $item->slug]) }}" class="h-full">
 
-                <div class="-tarjeta-pdcto">
+                <div class="grid grid-rows-subgrid row-span-3 bg-white p-2 gap-1 -tarjeta-pdcto">
 
-                    <div class="h-48 overflow-hidden flex items-center justify-center">
+                    <div class="flex items-center justify-center">
                         @php
                             $imageExists = false;
                             $imagePath = '';
@@ -28,17 +27,17 @@
 
                         @if ($imageExists)
                             <img src="{{ asset('storage/' . $item->images) }}" alt="{{ $item->name }}"
-                                class="w-full h-full object-cover">
+                                class="w-full h-full object-cover rounded-xl">
                         @else
                             <img src="{{ asset('images/generico.jpeg') }}" alt="Imagen genérica"
-                                class="w-full h-full object-cover">
+                                class="w-full h-full object-cover rounded-xl">
                         @endif
                     </div>
 
-                    <div class="p-4 flex-col">
+                    <div class="p-2">
                         <h3 class="font-bold text-xl mb-2">{{ $item->title }}</h3>
 
-                        <div class="max-h-[96px] overflow-hidden line-clamp-3">
+                        <div class="overflow-hidden line-clamp-3">
                             <div class="text-gray-700 text-base">
                                 {!! $item->description !!}
                             </div>

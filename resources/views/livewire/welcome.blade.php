@@ -2,6 +2,8 @@
  
 
 <section class="w-full">
+    
+
     @include('components.home-hero-section')
 
     <!-- Productos -->

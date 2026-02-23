@@ -1,7 +1,10 @@
-<div class="container mx-auto p-4">
-    {{ Breadcrumbs::render('producto', $product) }}
 
-    <div class="flex justify-end mt-4 pb-8">
+<div class=" w-full">
+   
+    {{ Breadcrumbs::render('producto', $product->name) }}   
+   
+   
+    
 
         <div class="container mx-auto p-4 ">
 
@@ -22,3 +25,5 @@
                 </a>
             </div>
         </div>
+    
+</div>

@@ -6,10 +6,12 @@
 </head>
 
 <body class="font-principal bright-red flex flex-col min-h-screen bg-base60">
+    
 
+    @include('layouts.principal-header')
 
-    {{-- @include('layouts.principal-header') --}}
-
+    {{  Breadcrumbs::render('home') }}
+    
     {{ $slot }}
 
     @include('layouts.principal-footer')
