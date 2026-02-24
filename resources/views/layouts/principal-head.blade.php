@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title ?? 'PROTEKTIUM' }}</title>
+    <title>{{ $title ?? 'Los Internacionales' }}</title>
 
-    <link rel="canonical" href="https://protektium.com{{ $canonical ?? '' }}" />
+    <link rel="canonical" href="https://losinternacionales.com{{ $canonical ?? '' }}" />
 
-    <meta name="description" content="{{ $_descripcion ?? 'criadero familiar que nació del amor, dedicación y respeto hacia los perros. Con más de 10 años de experiencia, criamos con responsabilidad y ética las razas Pomeranian, Shih Tzu y Yorkshire Terrier.' }}">
+    <meta name="description" content="{{ $_descripcion ?? 'Contamos con un elenco artístico y un grupo de profesionales altamente calificados en su área para alcanzar exitosamente los objetivos de eventos corporativos.' }}">
     
-    <meta name="keywords" content="criadero, perros, Pomeranian, Shih Tzu, Yorkshire Terrier, criador, perros, perros de compañía, perros de mascota, criador de perros">
+    <meta name="keywords" content="Big Band, orquesta internacional, los internacionales, eventos sociales, eventos corporativos, equipo de sonido, iluminación, escenografía, música en vivo, entretenimiento, bodas, aniversarios, fiestas privadas, conciertos, festivales, eventos empresariales, eventos culturales, eventos al aire libre, eventos temáticos">
 
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -23,7 +23,7 @@
     
    
 
-    <link rel="icon" href="{{ asset('images/protektium.ico') }}" sizes="any">
+    <link rel="icon" href="{{ asset('images/los-internacionales.ico') }}" sizes="any">
     <!-- Fonts -->
     
 

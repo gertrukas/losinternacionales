@@ -24,7 +24,7 @@ Route::get('/comunicados', BlogIndex::class)->name('blogs.index');
 Route::get('/aviso-de-privacidad', function () {
     $title = 'Aviso de privacidad';
     $canonical = '/aviso-de-privacidad';
-    $_descripcion = 'En Protektium reespetamos las regulaciones para la protección de datos';
+    $_descripcion = 'En Los internacionales reespetamos las regulaciones para la protección de datos';
 
     return view('aviso-de-privacidad', compact('title', 'canonical', '_descripcion'));
 });
@@ -34,7 +34,7 @@ Route::get('/aviso-de-privacidad', function () {
 Route::get('/quienes-somos', function () {
     $title = 'quienes somos';
     $canonical = '/quienes-somos';
-    $_descripcion = 'En Protektium ofrecemos soluciones en calzado industrial y accesorios de seguridad, respaldadas por asesoría técnica y enfoque ergonómico.';
+    $_descripcion = 'En Los internacionales ofrecemos soluciones para eventos sociales y corporativos, con un elenco artístico y un equipo de profesionales altamente calificados para alcanzar exitosamente los objetivos de cada evento.';
 
     return view('somos', compact('title', 'canonical', '_descripcion'));
 

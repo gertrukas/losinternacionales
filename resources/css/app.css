@@ -52,10 +52,6 @@
         color: white;
     }
     
-
-
-
-
     .-lista{
         margin-left:4rem;
         list-style-type: disc;
@@ -88,10 +84,6 @@
         font-size: 12px;
     }
     
-    .-razas{
-        font-size: 48px;
-    }
-
     .-centrado{
         @apply  lg:w-4/5  md:w-3/4  sm:w-full
     }
@@ -136,10 +128,10 @@
  |
  */
 
-.-nav-button{
-    @apply  text-base10 px-6 py-1 rounded focus:outline-none hover:text-white hover:bg-base10;
-}
 
+.-navButton{
+    @apply  text-white px-6 py-1 focus:outline-none hover:text-black hover:bg-base60;
+}
 .-btn-amarillo{
     @apply inline-flex items-center justify-center bg-base30 hover:bg-amarillofdo hover:border-amarilloborder text-black hover:text-amarilloborder font-bold py-2 px-4 rounded border border-amarilloborder mt-4 mr-2
 }

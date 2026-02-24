@@ -4,8 +4,8 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Columna 1 -->
       <div class="col-span-1">
-        <a href="/" class=" bg-base30"><img src='{{ asset('images/protektium.webp') }}' alt="Protektium" class="" ></a>
-		<p class="text-gray-400 text-sm mt-4">Líderes en equipos de protección industrial comprometidos con la seguridad y bienestar de los trabajadores en todos los sectores industriales.</p>
+        <a href="/" class=" bg-base30"><img src="{{ asset('images/los-internacionales.webp') }}" alt="Los Internacionales" class="" ></a>
+		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes..</p>
         
       </div>
 
@@ -16,7 +16,8 @@
 			<h2 class="text-white pb-4">Descubre</h2>
 				<ul class="text-sm ">
 					<li><a href="/quienes-somos" class="hover:text-base30 transition-colors duration-300 text-white">Somos</a></li>
-					<li><a href="/productos" class="hover:text-base30 transition-colors duration-300 text-white">Productos</a></li>
+					<li><a href="/trayectoria" class="hover:text-base30 transition-colors duration-300 text-white">Trayectoria</a></li>
+					<li><a href="/servicios" class="hover:text-base30 transition-colors duration-300 text-white">Servicios</a></li>
 					<li><a href="/contacto" class="hover:text-base30 transition-colors duration-300 text-white">Contacto</a></li>
 					
 				</ul>
@@ -28,11 +29,11 @@
         
     	<h2 class="text-white">Servicios</h2>
 		<ul class="text-sm">
-			<li><p class="text-gray-400 text-sm">Asesoría especializada</p></li>
-			<li><span class="text-gray-400 text-sm">Capacitación en seguridad</span></li>
-			<li><span class="text-gray-400 text-sm">Mantenimiento de equipos</span></li>
-			<li><span class="text-gray-400 text-sm">Certificaciones</span></li>
-			<li><span class="text-gray-400 text-sm">Garantía extendida</span></li>
+			<li><p class="text-gray-400 text-sm">Corporativos</p></li>
+			<li><span class="text-gray-400 text-sm">Sociales</span></li>
+			<li><span class="text-gray-400 text-sm">Equipo</span></li>
+			<li><span class="text-gray-400 text-sm">Pewrsonal</span></li>
+		
 		</ul>
       </div>
 
@@ -49,7 +50,7 @@
 				<br>
 				Col. Palmares
 				<br>
-				C.P. 76090 Querétaro, Qro.
+				C.P. 76090 CDMX
 			</div>
 		</div>
 
@@ -58,7 +59,7 @@
 				 <i class="fa-solid fa-phone"></i>   
 			</div>
 			<div class="text-gray-400 text-sm ml-2">
-				52 442 137 0329
+				<a href="tel:+525553362200">+52 (55)5336 2200</a>
 			</div>
 		</div>
 
@@ -67,7 +68,7 @@
 				 <i class="fa-regular fa-envelope"></i>
 			</div>
 			<div class="text-gray-400 text-sm ml-2">
-				<a href="mailto:info@protektium.com" class="hover:text-base30 transition-colors duration-300">info@protektium.com</a>	
+				<a href="mailto:info@losinternacionales.com">info@losinternacionales.com</a>	
 				
 			</div>
 		</div>

@@ -17,22 +17,22 @@ class UsersTableSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Administrador General',
-            'email' => 'super_admin@protektium.mx',
-            "password" => bcrypt("superadminprotektium"),
+            'email' => 'super_admin@losinternacionales.com',
+            "password" => bcrypt("superadminlosinternacionales"),
             "active" => 1,
         ])->assignRole('Super Admin');
 
 
         User::create([
             "name" => "Administrador del Sistema",
-            "email" => "admin@protektium.com",
+            "email" => "admin@plosinternacionales.com",
             "password" => bcrypt("password"),
             "active" => 1,
         ])->assignRole('Administrador');
 
         User::create([
             "name" => "Usuario General",
-            "email" => "general@protektium.com",
+            "email" => "general@losinternacionales.com",
             "password" => bcrypt("password"),
             "active" => 1,
         ]);
