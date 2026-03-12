@@ -1,5 +1,5 @@
 @php
-    $validImages = collect($product->images)
+    $validImages = collect($blog->images)
         ->filter(function ($image) {
             return !empty($image) && Storage::disk('public')->exists($image);
         })

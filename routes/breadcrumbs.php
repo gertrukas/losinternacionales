@@ -53,7 +53,6 @@ Breadcrumbs::for('blog.show', function (BreadcrumbTrail $trail, $title) {
 });
 
 
-
 // Home > Blog > [Category]
 Breadcrumbs::for('category', function (BreadcrumbTrail $trail, $category) {
     $trail->parent('blog');

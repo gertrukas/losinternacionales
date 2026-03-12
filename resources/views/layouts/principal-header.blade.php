@@ -1,30 +1,30 @@
 
        
-       <div class="container max-w-full bg-white">
-            <div class="wrapper grid grid-cols-2 py-1  mx-auto">
-                <div class="pl-4 sm:pl-0">
-                    <p class="-copy mt-0">
-                        <a href="tel:+525553362200">
-                            <span class="inline-flex items-center space-x-2 whitespace-nowrap mr-4">
-                                <i class="fa-solid fa-phone text-black"></i>   
-                                <span class="text-black">+52(55) 5336 2200 </span>
-                            </span>
-                        </a>
-                        <a href="mailto:info@losinternacionales.com">
-                            <span class=" inline-flex items-center space-x-2 whitespace-nowrap">
-                                    <i class="fa-regular fa-envelope text-black"></i>
-                                    <span class="text-black">info@losinternacionales.com</span>
-                            </span>
-                        </a>
-                        </p>
-                </div>
-                <div class="pr-4 text-right">
-                    <p class="-copy mt-0 text-black">La banda mas Internacional de México</p>
-                </div>
+    <div class="container max-w-full bg-white">
+        <div class="wrapper grid grid-cols-2 py-1  mx-auto">
+            <div class="pl-4 sm:pl-0">
+                <p class="-copy mt-0">
+                    <a href="tel:+525553362200">
+                        <span class="inline-flex items-center space-x-2 whitespace-nowrap mr-4">
+                            <i class="fa-solid fa-phone text-black"></i>   
+                            <span class="text-black">+52(55) 5336 2200 </span>
+                        </span>
+                    </a>
+                    <a href="mailto:info@losinternacionales.com">
+                        <span class=" inline-flex items-center space-x-2 whitespace-nowrap">
+                                <i class="fa-regular fa-envelope text-black"></i>
+                                <span class="text-black">info@losinternacionales.com</span>
+                        </span>
+                    </a>
+                    </p>
+            </div>
+            <div class="pr-4 text-right">
+                <p class="-copy mt-0 text-black">La banda mas Internacional de México</p>
             </div>
         </div>
+    </div>
 
-
+<header>
     <nav class="bg-black px-4 py-0 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
@@ -58,10 +58,10 @@
     </script>
         
 
-            <div>
-                <a href="https://wa.me/525553362200?text='hola%20"  target="_blank"
-                class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+    <div>
+        <a href="https://wa.me/525553362200?text='hola%20"  target="_blank"
+        class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
-            </div>
+    </div>
 
-        </header>
+</header>

@@ -1,12 +1,12 @@
 import './bootstrap';
 
-import Alpine from 'alpinejs';
+//import Alpine from 'alpinejs';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-window.Alpine = Alpine;
+//window.Alpine = Alpine;
 
-Alpine.start();
+//Alpine.start();
 
 function initScrollVideos() {
     const videos = document.querySelectorAll(".scroll-video");
