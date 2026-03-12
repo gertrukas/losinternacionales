@@ -7,7 +7,7 @@
                     <a href="tel:+525553362200">
                         <span class="inline-flex items-center space-x-2 whitespace-nowrap mr-4">
                             <i class="fa-solid fa-phone text-black"></i>   
-                            <span class="text-black">+52(55) 5336 2200 </span>
+                            <span class="text-black">+52(55) 8580 9927 </span>
                         </span>
                     </a>
                     <a href="mailto:info@losinternacionales.com">
@@ -40,10 +40,10 @@
     <!-- Menu -->
     <div id="mobileMenu" class="hidden bg-gray-800 shadow-lg border-t">
         <ul >
-            <li><a href="#" class="-navButton block w-full ">Somos</a></li>
-            <li><a href="#" class="-navButton block w-full ">Trayectoria</a></li>
-            <li><a href="#" class="-navButton block w-full ">Servicios</a></li>
-            <li><a href="#" class="-navButton block w-full ">Contacto</a></li>
+            <li><a href="/quienes-somos" class="-navButton block w-full ">Somos</a></li>
+            <li><a href="/trayectoria" class="-navButton block w-full ">Trayectoria</a></li>
+            <li><a href="/servicios" class="-navButton block w-full ">Servicios</a></li>
+            <li><a href="/contacto" class="-navButton block w-full ">Contacto</a></li>
     </div>
 
     <script>
@@ -59,7 +59,7 @@
         
 
     <div>
-        <a href="https://wa.me/525553362200?text='hola%20"  target="_blank"
+        <a href="https://wa.me/525585809927?text='hola%20"  target="_blank"
         class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>

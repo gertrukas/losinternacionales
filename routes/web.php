@@ -40,6 +40,28 @@ Route::get('/quienes-somos', function () {
 
 })->name('somos');
 
+Route::get('/trayectoria', function () {
+    $title = 'Trayectoria';
+    $canonical = '/trayectoria';
+    $_descripcion = 'Fundada en 1968 por Roberto Casas del Real, Los Internacionales, la Orquesta ha sido sinónimo de calidad y elegancia en el mundo de los eventos sociales durante más de cinco décadas.';
+
+    return view('trayectoria', compact('title', 'canonical', '_descripcion'));
+})->name('trayectoria');
+
+Route::get('/servicios', function () {
+    $title = 'Nuestros servicios';
+    $canonical = '/servicios';
+    $_descripcion = 'En Los internacionales ofrecemos servicios para eventos sociales y corporativos, con un equipo de profesionales altamente calificados para alcanzar exitosamente los objetivos de cada evento.';
+
+    return view('servicios', compact('title', 'canonical', '_descripcion'));
+
+})->name('servicios');
+
+
+
+
+
+
 
 Route::get('/contacto', ContactForm::class)->name('contacto');
 

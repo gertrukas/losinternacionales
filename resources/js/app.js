@@ -16,7 +16,7 @@ function initScrollVideos() {
     const options = {
         root: null, // use the viewport
         rootMargin: '0px',
-        threshold: 0.5 // trigger when 50% of the video is visible
+        threshold: 0.55 // trigger when 50% of the video is visible
     };
 
     const observer = new IntersectionObserver((entries) => {

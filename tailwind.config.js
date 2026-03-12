@@ -21,7 +21,7 @@ export default {
             colors: {
                 "azul" : "#384985",
                 "base10": "#000000",
-                "base30": "#F7CC1C",
+                "base30": "#EFB810",
                 "base60": "#ffffff",
                 "stone-gray": "hsl(0, 0%, 17%)",
                 "stone-light-gray": "hsl(0, 0%, 59%)",

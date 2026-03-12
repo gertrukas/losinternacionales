@@ -14,17 +14,20 @@
     p{
         margin-top: 1em;
         font-size: 16px;
-        @apply text-base10
+
+        @apply text-gray-400
     }
 
     h1{
         font-size: 2rem;
+
+        @apply text-base30
     }
 
     h2{
         font-size:1.5rem;
     
-        @apply text-base10 mb-0
+        @apply text-base30
     }
 
     .-titulo{
@@ -153,5 +156,17 @@
    @apply  text-white hover:text-base30;
 }
 
+/*
+ |--------------------------------------------------------------------------
+ | fondos
+ |--------------------------------------------------------------------------
+ |
+ | 
+ |
+ */
 
-
+ .-bg{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+ }

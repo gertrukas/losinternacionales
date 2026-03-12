@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             "name" => "Administrador del Sistema",
-            "email" => "admin@plosinternacionales.com",
+            "email" => "admin@losinternacionales.com",
             "password" => bcrypt("password"),
             "active" => 1,
         ])->assignRole('Administrador');

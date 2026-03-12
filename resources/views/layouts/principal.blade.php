@@ -21,20 +21,18 @@
 
      <div class="wrapper -centrado grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 pt-4" id="quienes-somos">
         
-        <div class="col-span-1 pl-2 text-white">
-            <h2 class="text-white">Eventos Corporativos</h2>
-            <p  class="text-white">Contamos con un elenco artístico y un grupo de profesionales altamente calificados en su área para
+        <div class="col-span-1 pl-2">
+            <h2 class="">Eventos Corporativos</h2>
+            <p  class="">Contamos con un elenco artístico y un grupo de profesionales altamente calificados en su área para
                 alcanzar exitosamente los objetivos de eventos corporativos.</p>
-            <p class="text-white">    Tenemos la capacidad y trato para trabajar en equipo con coordinador de eventos o wendding
+            <p class="">    Tenemos la capacidad y trato para trabajar en equipo con coordinador de eventos o wendding
                 Planner.</p>       
         </div>
         <div>
             <div class="relative w-full h-[40rem] aspect-video">
-                <video
+                <video controls  loop
                     src="{{ asset('video/corporativo.mp4') }}"
-                     muted loop
-                    class="scroll-video absolute inset-0 h-[40rem] object-cover aspect-[9/16] mx-auto"
-                    controls
+                    class="scroll-video absolute inset-0 h-[40rem] object-cover aspect-[9/16] mx-auto border-2 border-red-500"
                 ></video>
             </div>
         </div>
@@ -43,37 +41,35 @@
     <div class="wrapper -centrado grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 pt-4" id="quienes-somos">
         <div>
             <div class="relative w-full h-[40rem] aspect-video ">
-                <video
+                <video controls  loop
                     src="{{ asset('video/sociales.mp4') }}"
-                    muted loop
-                    class="scroll-video absolute inset-0 h-[40rem] object-cover aspect-[9/16] mx-auto"
+                    class="scroll-video absolute inset-0 h-[40rem] object-cover aspect-[9/16] mx-auto  border-2 border-red-500"
                     controls
                 ></video>
             </div>
         </div>
-        <div class="col-span-1 pl-2 text-white ">
-            <h2 class="text-white">Sociales</h2>
-            <p  class="text-white">con la misión de que tu evento social (aniversario, boda,cumpleaños, etc.) sea memorable cuidando
+        <div class="col-span-1 pl-2  ">
+            <h2 class="">Sociales</h2>
+            <p  class="">Con la misión de que tu evento social (aniversario, boda,cumpleaños, etc.) sea memorable cuidando
                 hasta el último detalle donde la música es el alma de la fiesta y con un ambiente sofisticado.</p>
-            <p class="text-white">Logrando que sea una experiencia musical y que sea una fecha inolvidable</p>       
+            <p class="">Logrando que sea una experiencia musical y que sea una fecha inolvidable</p>       
         </div>
         
     </div>
 
     <div class="wrapper -centrado grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 pt-4 mb-4" id="quienes-somos">
         
-        <div class="col-span-1 pl-2 text-white">
-            <h2 class="text-white">Equipo y personal</h2>
-            <p  class="text-white">Vanguardia en tecnología con personal técnico altamente capacitado y con los mejores equipos
+        <div class="col-span-1 pl-2 ">
+            <h2 class="">Equipo y personal</h2>
+            <p  class="">Vanguardia en tecnología con personal técnico altamente capacitado y con los mejores equipos
 profesionales para cada aplicación de las diferentes áreas de audio, video, iluminación y
 escenografía.</p>       
         </div>
         <div class="flex justify-center">
             <div class="relative w-full h-[40rem] aspect-video">
-                <video
+                <video controls  loop
                     src="{{ asset('video/equipo.mp4') }}"
-                    muted loop
-                    class="scroll-video absolute inset-0 h-[40rem] object-cover  aspect-[9/16] mx-auto"
+                    class="scroll-video absolute inset-0 h-[40rem] object-cover  aspect-[9/16] mx-auto  border-2 border-red-500"
                     controls
                 ></video>
             </div>

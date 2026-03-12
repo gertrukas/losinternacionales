@@ -4,7 +4,7 @@
     @include('layouts.principal-head')
 </head>
 
-<body class="font-principal bright-red flex flex-col min-h-screen bg-base60">
+<body class="font-principal bright-red flex flex-col min-h-screen bg-black">
 
     @include('layouts.principal-header')
 

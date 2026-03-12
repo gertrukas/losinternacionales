@@ -5,7 +5,7 @@
       <!-- Columna 1 -->
       <div class="col-span-1">
         <a href="/" class=" bg-base30"><img src="{{ asset('images/los-internacionales.webp') }}" alt="Los Internacionales" class="" ></a>
-		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes..</p>
+		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia y bajo la dirección de Elsa Urbina y marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes..</p>
         
       </div>
 
@@ -32,7 +32,7 @@
 			<li><p class="text-gray-400 text-sm">Corporativos</p></li>
 			<li><span class="text-gray-400 text-sm">Sociales</span></li>
 			<li><span class="text-gray-400 text-sm">Equipo</span></li>
-			<li><span class="text-gray-400 text-sm">Pewrsonal</span></li>
+			<li><span class="text-gray-400 text-sm">Personal</span></li>
 		
 		</ul>
       </div>
@@ -46,11 +46,9 @@
 				<i class="fa-solid fa-location-dot"></i>
 			</div>
 			<div class="text-gray-400 text-sm ml-2">
-				Palma cocotera 2060 
+				Campo Samarina 29, petrolera Tazqueña, Coyoacan
 				<br>
-				Col. Palmares
-				<br>
-				C.P. 76090 CDMX
+				C.P. 76090 Ciudad de México, CDMX
 			</div>
 		</div>
 
@@ -59,7 +57,7 @@
 				 <i class="fa-solid fa-phone"></i>   
 			</div>
 			<div class="text-gray-400 text-sm ml-2">
-				<a href="tel:+525553362200">+52 (55)5336 2200</a>
+				<a href="tel:+525585809927">+52 (55)8580 9927</a>
 			</div>
 		</div>
 

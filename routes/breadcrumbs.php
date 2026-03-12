@@ -19,6 +19,25 @@ Breadcrumbs::for('somos', function (BreadcrumbTrail $trail) {
     $trail->push('Quienes somos', route('somos'));
 });
 
+
+// Somos
+Breadcrumbs::for('quienes-somos', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Quienes somos', route('somos'));
+});
+
+// Trayectoria
+Breadcrumbs::for('trayectoria', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Trayectoria', route('trayectoria'));
+});
+
+// Trayectoria
+Breadcrumbs::for('servicios', function (BreadcrumbTrail $trail) {
+    $trail->push('Inicio', route('home'));
+    $trail->push('Servicios', route('servicios'));
+});
+
 Breadcrumbs::for('productos', function (BreadcrumbTrail $trail) {
     $trail->push('Inicio', route('home'));
     $trail->push('Productos', route('products.index'));
