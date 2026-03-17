@@ -30,6 +30,10 @@
         @apply text-base30
     }
 
+    label{
+        @apply text-white
+    }
+
     .-titulo{
         @apply bg-base10 text-base60 text-right p-4 font-montserrat text-xl mt-0
     }
@@ -39,7 +43,7 @@
     }
 
     .-titulo-area{
-        @apply  font-bold text-center pb-2 lg:text-5xl md:text-3xl sm:text-2xl sm:text-black text-2xl
+        @apply  font-bold text-center pb-2 lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-base30 
     }
 
     .-titulo-card{
@@ -169,4 +173,17 @@
     
     background-repeat: no-repeat;
     background-size: cover;
+ }
+
+
+ /*
+ |--------------------------------------------------------------------------
+ | colores
+ |--------------------------------------------------------------------------
+ |
+ | 
+ |
+ */
+ .-gris{
+    @apply bg-gray-800
  }

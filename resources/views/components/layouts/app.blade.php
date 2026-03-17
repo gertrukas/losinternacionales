@@ -84,13 +84,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-principal bright-red flex flex-col min-h-screen bg-base60">
+<body class="font-principal bright-red flex flex-col min-h-screen bg-black">
 
     @include('layouts.principal-header')
 
 
     @yield('content')
-    <div class="bg-gray-100">
+    <div >
         {{ $slot }}
     </div>
 

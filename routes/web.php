@@ -58,11 +58,6 @@ Route::get('/servicios', function () {
 })->name('servicios');
 
 
-
-
-
-
-
 Route::get('/contacto', ContactForm::class)->name('contacto');
 
 

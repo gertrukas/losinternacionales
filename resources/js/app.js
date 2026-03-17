@@ -16,12 +16,13 @@ function initScrollVideos() {
     const options = {
         root: null, // use the viewport
         rootMargin: '0px',
-        threshold: 0.55 // trigger when 50% of the video is visible
+        threshold: 0.7 // trigger when 50% of the video is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                entry.target.muted = false;
                 entry.target.play().catch(err => {
                     console.log('Video play error:', err);
                 }); // Play when in view

@@ -1,8 +1,9 @@
-<div class="container mx-auto p-4 bg-gray-100 mt-4">
+
+<div class="container mx-auto p-4 mt-4 -gris rounded-lg">
 
     <header class="flex justify-between items-center mb-0">
         <div class="text-6xl font-bold text-center pb-2">
-            <h1 class="-titulo-area">{{ $title }}</h1>
+            <h3 class="-titulo-area">{{ $title }}</h3>
         </div>
     </header>
 

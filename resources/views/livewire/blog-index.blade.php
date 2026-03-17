@@ -2,7 +2,7 @@
 
     {{ Breadcrumbs::render('blogs') }}
 
-    <main class="container mx-auto p-4">
+    <main class="container mx-auto p-4 mt-4 -gris rounded-lg">
 
         <div class="mb-4">
             <div class="relative flex items-center">
@@ -17,9 +17,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             @forelse ($blogs as $blog)
-                <div class="grid grid-rows-subgrid row-span-4 bg-white p-2 gap-1 -tarjeta-pdcto">
-                    
-                </div>
+                
 
 
                 <div

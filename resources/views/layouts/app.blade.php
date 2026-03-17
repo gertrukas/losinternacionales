@@ -7,7 +7,7 @@
 <body class="font-principal bright-red flex flex-col min-h-screen bg-black">
 
     @include('layouts.principal-header')
-
+principal
     @yield('content')
 
     @include('layouts.principal-footer')

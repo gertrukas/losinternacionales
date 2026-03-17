@@ -7,6 +7,7 @@
 
         <div class="wrapper py-12 lg:py-20">
             <div class="max-w-3xl mx-auto">
+                
                 @if (session()->has('error'))
                     <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 text-red-800 rounded">
                         <div class="flex items-center">
@@ -19,16 +20,17 @@
                         </div>
                     </div>
                 @endif
+
                 <!-- Encabezado -->
                 <div class="text-center mb-6">
                     
-                    <h2 class="text-lg text-gray-600">
+                    <h1 class="text-lg">
                         Estamos aquí para ayudarte. Completa el formulario y te responderemos pronto.
-                    </h2>
+                    </h1>
                 </div>
 
                 <!-- Formulario -->
-                <div class="bg-white rounded-lg shadow-xl p-6 lg:p-10 border-t-4 border-black">
+                <div class="-gris rounded-lg shadow-xl p-6 lg:p-10 border-t-4 border-black">
 
                     @if ($successMessage)
                         <div class="mb-6 p-4 bg-green-50 border-l-4 border-green-500 text-green-800 rounded">
@@ -47,7 +49,7 @@
 
                         <!-- Nombre -->
                         <div>
-                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                            <label for="name" class="block text-sm font-semibold mb-2">
                                 Nombre completo <span class="text-red-500">*</span>
                             </label>
                             <input type="text" id="name" wire:model="name"
@@ -70,7 +72,7 @@
 
                             <!-- Email -->
                             <div>
-                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                <label for="email" class="block text-sm font-semibold mb-2">
                                     Correo electrónico <span class="text-red-500">*</span>
                                 </label>
                                 <input type="email" id="email" wire:model="email"
@@ -90,7 +92,7 @@
 
                             <!-- Teléfono -->
                             <div>
-                                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                <label for="phone" class="block text-sm font-semibold mb-2">
                                     Teléfono <span class="text-red-500">*</span>
                                 </label>
                                 <input type="tel" id="phone" wire:model="phone"
@@ -111,7 +113,7 @@
 
                         <!-- Comentarios -->
                         <div>
-                            <label for="comments" class="block text-sm font-semibold text-gray-700 mb-2">
+                            <label for="comments" class="block text-sm font-semibold mb-2">
                                 Mensaje <span class="text-red-500">*</span>
                             </label>
                             <textarea id="comments" wire:model="comments" rows="6"
@@ -147,46 +149,48 @@
                 <!-- Información adicional -->
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
 
-                    <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 rounded-lg  text-center -gris">
                         <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fa-solid fa-phone text-base30"></i>   
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Teléfono</h3>
-                        <p class="text-gray-600">Llámanos al</p>
-                        <p class="text-azul font-semibold">(442) 491 1549</p>
+                        <h3 class="font-bold  mb-2 text-base30">Teléfono</h3>
+                        <p class="text-base30">Llámanos al</p>
+                        <br>
+                        <a href="tel:+525585809927" class="text-base30 font-semibold">+52 (55) 8580 9927</a>
                     </div>
 
                     <div
-                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white p-6 rounded-lg text-center -gris">
                         <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fa-regular fa-envelope text-base30"></i>
+                            <i class="fa-regular fa-envelope text-base30  "></i>
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Email</h3>
-                        <p class="text-gray-600">Escríbenos a</p>
-                        <p
-                            class="text-xs text-azul font-semibold hover:text-orange-500 transition-colors duration-300 hover:underline break-words block">
-                            {{ env('MAIL_CONTACT_ADDRESS', 'info@losinternacionales.com') }}</p>
+                        <h3 class="font-bold text-base30 mb-2">Email</h3>
+                        <p class="text-base30">Escríbenos a</p>
+                        <br>
+                        <a href="mailto:{{ env('MAIL_CONTACT_ADDRESS', 'info@losinternacionales.com') }}"
+                            class="text-xs font-semibold text-base30 hover:text-base60 transition-colors duration-300 hover:underline break-words block">
+                            {{ env('MAIL_CONTACT_ADDRESS', 'info@losinternacionales.com') }}</a>
 
                         <div class="pt-4 text-center">
-                            <p class="text-sm text-gray-600 mb-2">¿Prefieres usar Gmail?</p>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@losinternacionales.com&su=Consulta desde el sitio web&body=Hola, me gustaría obtener más información sobre..."
+                            <p class="text-sm text-base30 mb-2">¿Prefieres usar Gmail?</p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ env('MAIL_CONTACT_ADDRESS', 'info@losinternacionales.com') }}&su=Consulta desde el sitio web&body=Hola, me gustaría obtener más información sobre..."
                                 target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-azul hover:text-orange-500 font-semibold transition-colors duration-300">
+                                class="inline-flex items-center text-base30  hover:text-base60   font-semibold transition-colors duration-300">
                                 
-                                <i class="fa-regular fa-envelope text-azul pr-2"></i>
+                                <i class="fa-regular fa-envelope text-base30   hover:text-base60  pr-2"></i>
                                 Abrir Gmail
                             </a>
                         </div>
                     </div>
 
                     <div
-                        class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        class="-gris p-6 rounded-lg text-center ">
                         <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fa-regular fa-clock text-base30"></i>
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Horario</h3>
-                        <p class="text-gray-600">Lun - Vie</p>
-                        <p class="text-azul font-semibold">9:00 AM - 6:00 PM</p>
+                        <h3 class="font-bold text-base30 mb-2">Horario</h3>
+                        <p class="text-base30">Lun - Vie</p>
+                        <p class="text-base30   font-semibold">9:00 AM - 6:00 PM</p>
                     </div>
                 </div>
 
