@@ -19,7 +19,7 @@ export default {
                 montserrat: ['"Montserrat"', "sans-serif"],
             },
             colors: {
-                "fdo": "#3c3c3c",
+                "fdo": "#000000",
                 "base10": "#000000",
                 "base30": "#EFB810",
                 "base60": "#ffffff",
