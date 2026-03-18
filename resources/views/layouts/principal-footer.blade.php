@@ -5,7 +5,7 @@
       <!-- Columna 1 -->
       <div class="col-span-1">
         <a href="/" class=" bg-base30"><img src="{{ asset('images/los-internacionales.webp') }}" alt="Los Internacionales" class="" ></a>
-		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia y bajo la dirección de Elsa Urbina y marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes..</p>
+		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia y bajo la dirección de Elsa Urbina y marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes.</p>
         
       </div>
 
@@ -46,9 +46,11 @@
 				<i class="fa-solid fa-location-dot"></i>
 			</div>
 			<div class="text-gray-400 text-sm ml-2">
-				Campo Samarina 29, petrolera Tazqueña, Coyoacan
-				<br>
-				C.P. 76090 Ciudad de México, CDMX
+				Campo Samaria 29. 
+				<br>Petrolera Taxqueña.
+				<br>Coyoacán, 04410 
+				<br>Ciudad de México, CDMX
+				
 			</div>
 		</div>
 

@@ -1,6 +1,6 @@
-    <div class="container max-w-full bg-black py-2">
+    <div class="container max-w-full py-2">
         <div class="div wrapper">
-            <nav class="flex bborder border-gray-600 bg-gradient-to-r from-slate-500/50 to-slate-800/20 py-3 px-5 rounded-lg"
+            <nav class="flex border border-gray-600 bg-gradient-to-r from-slate-500/50 to-slate-800/20 py-3 px-5 rounded-lg"
                 aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">

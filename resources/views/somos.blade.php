@@ -16,7 +16,7 @@
         </div>    
 
         <div class="pt-4">
-            <h1>quienes somos</h1>
+            <h1>Quienes somos</h1>
             <p>Desde su fundación, Los Internacionales, la orquesta ha sido sinónimo de elegancia, calidad y distinción en el mundo de los eventos sociales y hemos acompañado a cientos de parejas, aniversarios, cumpleaños y empresas en sus momentos más especiales, creando atmósferas únicas y memorables.</p>
             <p>Bajo la dirección de Elsa Urbina, la orquesta continúa su legado, ofreciendo una fusión perfecta de clásicos y propuestas modernas, adaptadas a cada ocasión. Nos especializamos en bodas, eventos corporativos y celebraciones sociales, brindando una experiencia musical exclusiva que resalta la importancia de cada instante.</p>
         </div>
@@ -29,13 +29,13 @@
         <h1 class="text-center">Un toque musical único para tu evento.</h1>
         <ul class="-lista">
             <li>
-                <h2>elegancia, calidad y distinción</h2>                
+                <h2>Elegancia, calidad y distinción.</h2>
             </li>
             <li>
-                <h2>bodas, aniversarios, cumpleaños y empresas</h2>
+                <h2>Bodas, aniversarios, cumpleaños y empresas.</h2>
             </li>
              <li>
-                <h2>atmósferas únicas y memorables.</h2>
+                <h2>Atmósferas únicas y memorables.</h2>
             </li>
         </ul>
         

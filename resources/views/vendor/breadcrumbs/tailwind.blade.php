@@ -1,5 +1,5 @@
 @unless ($breadcrumbs->isEmpty())
-<div class="container max-w-full bg-black py-2">
+<div class="container max-w-full bg-fdo py-2">
 
         <nav class="container rounded-lg  mx-auto border border-gray-600 bg-gradient-to-r from-slate-500/50 to-slate-800/20">
             <ol class="p-4  flex flex-wrap text-sm text-white">

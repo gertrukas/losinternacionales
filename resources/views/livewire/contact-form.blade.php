@@ -25,7 +25,7 @@
                 <div class="text-center mb-6">
                     
                     <h1 class="text-lg">
-                        Estamos aquí para ayudarte. Completa el formulario y te responderemos pronto.
+                        Estamos aquí para ayudarte. Completa el formulario y te responderémos pronto.
                     </h1>
                 </div>
 

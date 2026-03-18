@@ -19,10 +19,11 @@ export default {
                 montserrat: ['"Montserrat"', "sans-serif"],
             },
             colors: {
-                "azul" : "#384985",
+                "fdo": "#3c3c3c",
                 "base10": "#000000",
                 "base30": "#EFB810",
                 "base60": "#ffffff",
+                "azul" : "#384985",
                 "stone-gray": "hsl(0, 0%, 17%)",
                 "stone-light-gray": "hsl(0, 0%, 59%)",
                 "amber-950": "hsl(40, 100%, 10%)",

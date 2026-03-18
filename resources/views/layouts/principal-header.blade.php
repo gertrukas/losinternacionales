@@ -19,13 +19,13 @@
                     </p>
             </div>
             <div class="pr-4 text-right">
-                <p class="-copy mt-0 text-black">La banda mas Internacional de México</p>
+                <p class="-copy mt-0 text-black">La orquesta mas Internacional de México</p>
             </div>
         </div>
     </div>
 
 <header>
-    <nav class="bg-black px-4 py-0 flex items-center justify-between">
+    <nav class="bg-fdo px-4 py-0 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
             <a href="/" class="flex justify-center items-center p-4"><img src="{{ asset('images/los-internacionales.webp') }}" width="200" height="auto" alt="Los Internacionales"></a>
