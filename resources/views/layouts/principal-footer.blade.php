@@ -5,7 +5,7 @@
       <!-- Columna 1 -->
       <div class="col-span-1">
         <a href="/" class=" bg-base30"><img src="{{ asset('images/los-internacionales.webp') }}" alt="Los Internacionales" class="" ></a>
-		<p class="text-gray-400 text-sm mt-4">Con más de 5 décadas de experiencia y bajo la dirección de Elsa Urbina y marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes.</p>
+		<p class="text-gray-400 text-sm mt-4 text-left">Con más de 5 décadas de experiencia y bajo la dirección de Elsa Urbina y marcada por una trayectoria de éxito, seguimos brindando las mejores experiencias y los mejores servicios a nuestros clientes.</p>
         
       </div>
 

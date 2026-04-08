@@ -7,7 +7,7 @@
                     <a href="tel:+525553362200">
                         <span class="inline-flex items-center space-x-2 whitespace-nowrap mr-4">
                             <i class="fa-solid fa-phone text-black"></i>   
-                            <span class="text-black">+52(55) 8580 9927 </span>
+                            <span class="text-black">+52(55) 8580 9927</span>
                         </span>
                     </a>
                     <a href="mailto:info@losinternacionales.com">

@@ -1,4 +1,5 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,19 +16,18 @@
         margin-top: 1em;
         font-size: 16px;
 
-        @apply text-gray-400
+        @apply text-gray-400 font-montserrat text-justify
     }
 
     h1{
         font-size: 2rem;
-
-        @apply text-base30
+        @apply text-base60 font-montserrat font-thin uppercase text-base30
     }
 
     h2{
-        font-size:1.5rem;
-    
-        @apply text-base30
+        font-size:2rem;
+        line-height: 1.1;
+        @apply text-base30 font-montserrat font-thin 
     }
 
     label{
@@ -43,7 +43,7 @@
     }
 
     .-titulo-area{
-        @apply  font-bold text-center pb-2 lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-base30 
+        @apply  text-center pb-2 lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-base60 font-montserrat
     }
 
     .-titulo-card{
